@@ -1,18 +1,24 @@
 function main(){
     let pw1 = "Pass1234";
     let pw2 = "Pass1234";
+    let pw3 = "HELLO1234";
+    let pw4 = "HELLO1234"
 
     console.log("Password 1: " + pw1);
     console.log("Password 2: " + pw2);
-    console.log("Validity: " + validatePassword(pw1,pw2));
+    console.log("Validity: " + validatePassword(pw1,pw2) + "\n");
+
+    console.log("Password 1: " + pw3);
+    console.log("Password 2: " + pw4);
+    console.log("Validity: " + validatePassword(pw3,pw4) + "\n");
 
     console.log("String: " + pw1);
-    console.log("Reversed String: " + reverseString(pw1));
+    console.log("Reversed String: " + reverseString(pw1) + "\n");
 
-    console.log("Store Password with input (John, Pass1234, Pass1234):");
+    console.log("Store Password with input ('John', 'Pass1234', 'Pass1234'):");
     console.log(storePassword("John", "Pass1234", "Pass1234"));
 
-    console.log("Store Password with input (John, Pass123, Pass12345):");
+    console.log("Store Password with input ('John', 'Pass123', 'Pass12345'):");
     console.log(storePassword("John", "Pass123", "Pass12345"));
     return;
 }
